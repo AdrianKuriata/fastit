@@ -1,0 +1,31 @@
+{
+    "name": "devtemple/fastit",
+    "description": "This is a package, which let me faster making projects with Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adrian Kuriata",
+            "email": "adriandj83@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Devtemple\\Fastit\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Devtemple\\Fastit\\FastitServiceProvider",
+                "Devtemple\\Fastit\\EventsServiceProvider",
+                "Devtemple\\Fastit\\ViewsServiceProvider",
+                "Devtemple\\Fastit\\RoutesServiceProvider"
+            ]
+        }
+    }
+}
